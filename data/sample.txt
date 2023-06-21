@@ -1,0 +1,2 @@
+LangChain is a framework designed to simplify the creation of applications using large language models (LLMs).
+LangChain is amazing.
