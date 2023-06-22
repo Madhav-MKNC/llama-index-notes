@@ -78,6 +78,10 @@ storage_context.docstore.add_documents(nodes)
 index1 = VectorStoreIndex(nodes, storage_context=storage_context)
 index2 = ListIndex(nodes, storage_context=storage_context)
 
+# # Global ServiceContext
+# from llama_index import set_global_service_context
+# set_global_service_context(service_context=service_context)
+
 # Inserting docs
 from llama_index import VectorStoreIndex
 index = VectorStoreIndex([])
@@ -91,14 +95,18 @@ index.insert_nodes(nodes=nodes)
 
 
 """
+################################################################
 STEP 4: [optional/advanced] Build index on top of other indices
+################################################################
 """
 
 # code
 
 
 """
+########################
 STEP 5: Query the Index
+########################
 """
 
 query_engine = index.as_query_engine(verbose=True)

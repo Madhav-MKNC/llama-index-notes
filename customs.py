@@ -2,7 +2,7 @@
 ##################
 Customizing LLM's
 ##################
-NOTE: default: text-davinci-003
+NOTE: default: GPT-3 text-davinci-003
 """
 
 from llama_index import LLMPredictor, VectorStoreIndex, ServiceContext
@@ -14,11 +14,6 @@ index = VectorStoreIndex.from_documents(
     documents=documents,
     service_context=service_context
 )
-
-# Global ServiceContext
-from llama_index import set_global_service_context
-set_global_service_context(service_context=service_context)
-
 
 
 """
