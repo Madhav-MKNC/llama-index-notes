@@ -3,6 +3,18 @@ USAGE PATTERN FOR LLAMA_INDEX FRAMEWORK
 """
 
 """
+################################
+STEP 0: Configuration and Setup
+################################
+"""
+
+from dotenv import load_dotenv
+# import os
+# os.environ["OPENAI_API_KEY"] = "<openai_api_key>"
+load_dotenv()
+
+
+"""
 #######################################################
 STEP 1: Load Documents, manually or using data loaders
 #######################################################
